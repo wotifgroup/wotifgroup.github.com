@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+ <title>WotifGroup Technical Blog</title>
+ <link href="http://.github.com/wotifgroup.github.com/atom.xml" rel="self"/>
+ <link href="http://.github.com/wotifgroup.github.com/"/>
+ <updated>2011-06-16T09:46:36+10:00</updated>
+ <id>http://.github.com/wotifgroup.github.com/</id>
+ <author>
+   <name>Dr Nic Williams</name>
+   <email>williams@gmail.com</email>
+ </author>
+
+ 
+ <entry>
+   <title>Welcome to 'WotifGroup Technical Blog'</title>
+   <link href="http://.github.com/wotifgroup.github.com/2011/06/10/first-post.html"/>
+   <updated>2011-06-10T00:00:00+10:00</updated>
+   <id>http://.github.com/wotifgroup.github.com/2011/06/10/first-post</id>
+   <content type="html">&lt;p&gt;WotifGroup Technical Blog is going to be an awesome project.&lt;/p&gt;</content>
+ </entry>
+ 
+ 
+</feed>
