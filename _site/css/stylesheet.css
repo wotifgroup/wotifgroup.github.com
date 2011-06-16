@@ -84,7 +84,6 @@ html>body #wrapper {
 	/*width: 430px;*/
 /*	height: 584px;*/ /* (64+2*20+2)*6 - 2 - 2*25 */
 	background: #fff;
-        float: left;
 }
 html>body #content {
 	margin-left: 230px;
