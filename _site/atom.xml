@@ -4,13 +4,41 @@
  <title>WotifGroup Developers Blog</title>
  <link href="http://.github.com/wotifgroup.github.com/atom.xml" rel="self"/>
  <link href="http://.github.com/wotifgroup.github.com/"/>
- <updated>2011-06-16T14:25:21+10:00</updated>
+ <updated>2011-06-16T16:08:22+10:00</updated>
  <id>http://.github.com/wotifgroup.github.com/</id>
  <author>
    <name>WotifGroup Development Team</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>WotifGroup Architecture Radar - Apr 2011</title>
+   <link href="http://.github.com/wotifgroup.github.com/2011/06/16/architecture-radar.html"/>
+   <updated>2011-06-16T00:00:00+10:00</updated>
+   <id>http://.github.com/wotifgroup.github.com/2011/06/16/architecture-radar</id>
+   <content type="html">&lt;p&gt;The WotifGroup Architecture Radar is &amp;#8220;our&amp;#8221; version of the &lt;a href='http://www.thoughtworks.com/radar'&gt;ThoughtWorks Technology Radar&lt;/a&gt;.&lt;/p&gt;
+&lt;script src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js' type='text/javascript'&gt;
+&lt;/script&gt;&lt;script src='/js/radars/lib/protovis-3.2/protovis-d3.2.js' type='text/javascript'&gt;
+&lt;/script&gt;&lt;script src='/js/radars/utils.js' type='text/javascript' charset='utf-8'&gt;
+&lt;/script&gt;&lt;script src='/js/radars/radars/wotifgroup_tech_radar_feb_2011.js' type='text/javascript' charset='utf-8'&gt;
+&lt;/script&gt;&lt;style type='text/css' media='screen'&gt;
+  
+#fig {
+  height: 1000px;
+  width: 1200px;
+}
+ 
+&lt;/style&gt;&lt;script src='/js/radars/radar.js' type='text/javascript' charset='utf-8'&gt;
+&lt;/script&gt;&lt;script type='text/javascript' charset='utf-8'&gt;
+ 
+var h = 1160;
+var w = 1200;
+ 
+$(function() {init(h,w);});
+
+&lt;/script&gt;&lt;h1 id='title' style='text-align: center;'&gt;WotifGroup Architecture Radar (Apr 2011)&lt;/h1&gt;&lt;div id='radar' /&gt;</content>
+ </entry>
  
  <entry>
    <title>Welcome to 'WotifGroup Developers Blog'</title>
