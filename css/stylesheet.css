@@ -1,5 +1,5 @@
 html {
-	background: #1e1e1e;
+	background: #fff;
 }
 body {
 /*  background: transparent url("http://macromates.com/images/site/bg_body") repeat-y 50% 0px;*/
@@ -15,18 +15,16 @@ a[href] {
 #wrapper { /* IE workaround */
 	margin: 0 auto;
 	padding: 0;
-	width: 750px;
 }
 html>body #wrapper {
 	margin: 0 auto;
 	padding: 0;
 	width: auto;
-	max-width: 750px;
 }
 
 #header {
 	position: relative;
-	background: #aaa;
+	background: #0068bc;
 	height: 113px;
 }
 #header h1 {
@@ -40,7 +38,7 @@ html>body #wrapper {
 }
 
 #navigation {
-	background: #232323;
+	background: #91c43f;
 	border-bottom: 1px solid #171717;
 	margin: 0;
 	padding: 0.5em 0;
@@ -81,19 +79,18 @@ html>body #wrapper {
 }
 
 #content { /* IE workaround */
-	margin: 0;
+	margin-left: 230px;
 	padding: 25px;
-	width: 430px;
-	height: 584px; /* (64+2*20+2)*6 - 2 - 2*25 */
+	/*width: 430px;*/
+/*	height: 584px;*/ /* (64+2*20+2)*6 - 2 - 2*25 */
 	background: #fff;
+        float: left;
 }
 html>body #content {
-	margin: 0;
+	margin-left: 230px;
 	padding: 25px;
 	width: auto;
 	height: auto;
-	max-width: 430px;
-	min-height: 584px; /* (64+2*20+2)*6 - 2 - 2*25 */
 	background: #fff;
 }
 #content :first-child {
@@ -107,10 +104,10 @@ html>body #content {
 	margin: 0;
 	padding: 0;
 	top: 0px;
-	left: 480px;
-	width: 270px;
+	/*left: 480px; */
+	width: 230px;
 	background-color: #e8eaea;
-	position: absolute;
+        float: left;
 }
 #sidebar .item {
 	color: #5b5b5b;
@@ -142,7 +139,7 @@ html>body #content {
 	min-height: 1em;
 	clear: both;
 	color: #b5b5b5;
-	background: #2E2E2E;
+	background: #91c43f;
 }
 #footer * {
 	margin: 0;
