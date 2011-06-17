@@ -2,7 +2,7 @@ header_color: fff
 theme: default
 name: wotifgroup.github.com
 title: WotifGroup Developers Blog
-safe: true
+safe: false
 markdown: rdiscount
 pygments: true
 permalink: /:year/:month/:day/:title
