@@ -1,27 +1,78 @@
----
-layout: nil
----
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
  
  <title>WotifGroup Developers Blog</title>
  <link href="http://.github.com/wotifgroup.github.com/atom.xml" rel="self"/>
  <link href="http://.github.com/wotifgroup.github.com/"/>
- <updated>{{ site.time | date_to_xmlschema }}</updated>
+ <updated>2011-06-17T16:27:50+10:00</updated>
  <id>http://.github.com/wotifgroup.github.com/</id>
  <author>
    <name>WotifGroup Development Team</name>
    <email></email>
  </author>
 
- {% for post in site.posts %}
+ 
  <entry>
-   <title>{{ post.title }}</title>
-   <link href="http://.github.com/wotifgroup.github.com{{ post.url }}"/>
-   <updated>{{ post.date | date_to_xmlschema }}</updated>
-   <id>http://.github.com/wotifgroup.github.com{{ post.id }}</id>
-   <content type="html">{{ post.content | xml_escape }}</content>
+   <title>WotifGroup Architecture Radar - Apr 2011</title>
+   <link href="http://.github.com/wotifgroup.github.com/2011/06/16/architecture-radar"/>
+   <updated>2011-06-16T00:00:00+10:00</updated>
+   <id>http://.github.com/wotifgroup.github.com/2011/06/16/architecture-radar</id>
+   <content type="html">&lt;p&gt;The WotifGroup Architecture Radar is &quot;our&quot; version of the &lt;a href=&quot;http://www.thoughtworks.com/radar&quot;&gt;ThoughtWorks Technology Radar&lt;/a&gt;.&lt;/p&gt;
+
+&lt;script type=&quot;text/javascript&quot; src=&quot;/js/radars/lib/protovis-3.2/protovis-d3.2.js&quot;&gt;&lt;/script&gt;
+
+
+
+
+&lt;script type=&quot;text/javascript&quot; charset=&quot;utf-8&quot; src=&quot;/js/radars/utils.js&quot;&gt;&lt;/script&gt;
+
+
+
+
+&lt;script type=&quot;text/javascript&quot; charset=&quot;utf-8&quot; src=&quot;/js/radars/radars/wotifgroup_tech_radar_feb_2011.js&quot;&gt;&lt;/script&gt;
+
+
+
+
+
+
+
+
+&lt;script type=&quot;text/javascript&quot; src=&quot;/js/radars/radar.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+
+
+
+
+&lt;h1 id=&quot;title&quot; style=&quot;text-align: center;&quot;&gt;WotifGroup Architecture Radar (Apr 2011)&lt;/h1&gt;
+
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;div id=&quot;radar&quot;&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;script type=&quot;text/javascript&quot;&gt;
+ 
+var h = 1160;
+var w = 1200;
+ 
+$(document).ready(function() {radar_init(h,w); } );
+
+&lt;/script&gt;
+
+</content>
  </entry>
- {% endfor %}
+ 
+ <entry>
+   <title>Welcome to 'WotifGroup Developers Blog'</title>
+   <link href="http://.github.com/wotifgroup.github.com/2011/06/10/first-post"/>
+   <updated>2011-06-10T00:00:00+10:00</updated>
+   <id>http://.github.com/wotifgroup.github.com/2011/06/10/first-post</id>
+   <content type="html">&lt;p&gt;WotifGroup Developers Blog is going to be an awesome project.&lt;/p&gt;
+</content>
+ </entry>
+ 
  
 </feed>
