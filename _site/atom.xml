@@ -4,22 +4,13 @@
  <title>WotifGroup Developers Blog</title>
  <link href="http://.github.com/wotifgroup.github.com/atom.xml" rel="self"/>
  <link href="http://.github.com/wotifgroup.github.com/"/>
- <updated>2011-06-17T14:57:00+10:00</updated>
+ <updated>2011-06-17T15:04:57+10:00</updated>
  <id>http://.github.com/wotifgroup.github.com/</id>
  <author>
    <name>WotifGroup Development Team</name>
    <email></email>
  </author>
 
- 
- <entry>
-   <title>Another test</title>
-   <link href="http://.github.com/wotifgroup.github.com/2011/06/17/test"/>
-   <updated>2011-06-17T00:00:00+10:00</updated>
-   <id>http://.github.com/wotifgroup.github.com/2011/06/17/test</id>
-   <content type="html">&lt;p&gt;hey do stuff already&lt;/p&gt;
-</content>
- </entry>
  
  <entry>
    <title>WotifGroup Architecture Radar - Apr 2011</title>
