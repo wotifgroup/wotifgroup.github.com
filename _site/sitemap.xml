@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+      <loc>http://josediazgonzalez.com/atom.xml</loc>
+      <lastmod>2011-06-17</lastmod>
+  </url>
+  <url>
+      <loc>http://josediazgonzalez.com/</loc>
+      <lastmod>2011-06-17</lastmod>
+  </url>
+  <url>
+      <loc>http://josediazgonzalez.com/2011/06/17/test</loc>
+      <lastmod>2011-06-17</lastmod>
+  </url>
+  <url>
+      <loc>http://josediazgonzalez.com/2011/06/16/architecture-radar</loc>
+      <lastmod>2011-06-16</lastmod>
+  </url>
+  <url>
+      <loc>http://josediazgonzalez.com/2011/06/10/first-post</loc>
+      <lastmod>2011-06-10</lastmod>
+  </url>
+</urlset>

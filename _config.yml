@@ -1,0 +1,14 @@
+header_color: fff
+theme: default
+name: wotifgroup.github.com
+title: WotifGroup Developers Blog
+markdown: rdiscount
+pygments: true
+permalink: /:year/:month/:day/:title
+regeneration: true
+lsi: true
+exclude: README.textile Rakefile
+tag_title_prefix: 'Tag: '
+base_url: http://josediazgonzalez.com
+post_types:
+  - portfolio

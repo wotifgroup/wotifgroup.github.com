@@ -1,0 +1,29 @@
+---
+layout: post
+title: WotifGroup Architecture Radar - Apr 2011 
+---
+
+The WotifGroup Architecture Radar is "our" version of the <a href="http://www.thoughtworks.com/radar">ThoughtWorks Technology Radar</a>.
+
+<script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js">
+
+</script>
+
+<script type="text/javascript" charset="utf-8" src="/js/radars/lib/protovis-3.2/protovis-d3.2.js">
+
+</script>
+
+<script type="text/javascript" charset="utf-8" src="/js/radars/utils.js">
+
+</script>
+
+<script type="text/javascript" charset="utf-8" src="/js/radars/radars/wotifgroup_tech_radar_feb_2011.js">
+
+</script>
+ 
+<script type="text/javascript" charset="utf-8" src="/js/radars/radar.js">
+
+</script>
+
+
+

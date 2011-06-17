@@ -3,41 +3,45 @@
 <html>
   <head>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
-    <link rel="stylesheet" type="text/css" href="css/stylesheet.css" charset="utf-8">
     <title>{{ page.title }}</title>
+    <link rel="stylesheet" type="text/css" href="/css/stylesheet.css" charset="utf-8">
+    <script type="text/javascript" src="https://www.google.com/jsapi">
+    </script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js">
+    </script>    
   </head>
   <body id="intro">
     <div id="wrapper">
       <div id="header" onclick="javascript:window.location='http://wotifgroup.github.com/'">
         <h1>WotifGroup Developers Blog</h1>
       </div>
-      <div id="navigation">
-        <ul>
-          <li id="navi_intro">
-            <a href="/Intro"</a>
-          </li>
-        </ul>
-      </div>
+      {% include nav.markdown %}
       <div id="page_body">
-        <div id="sidebar">
-          <div class="item">
-            <!-- Blog   -->
-            <h4><a href="atom.xml" id="rss_feed" name="rss_feed">Blog Posts</a></h4>
-            <p>
-              {% for post in site.posts %} 
-                <span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}">{{ post.title }}</a><br>
-              {% endfor %}
-            </p>
-          </div>
-          <div class="item">
-            <script type="text/javascript" src="http://disqus.com/forums/wotifgroupblog/combination_widget.js?num_items=5&color=orange&default_tab=recent"></script>
-          </div>
-        </div>
-        <div id="content">
           {{ content }}
-        </div>
-      <div id="footer">
-      </div>
+        {% include footer.html %}
     </div>
+    
+    <script type="text/javascript">
+  		if ($('#disqus_thread').length) {
+  			var disqus_shortname = 'wotifgroupblog'; // required: replace example with your forum shortname
+  			var disqus_identifier = '{{ page.url }}';
+  			var disqus_url = '{{ site.base_url }}{{ page.url }}';
+  			var disqus_title = '{{ page.title }}';
+
+  			(function() {
+  				var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+  				dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+  				(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+
+  				var commentCount = setInterval(function() {
+  					if ($('#dsq-num-posts').length) {
+  						$('.responses-number').html($('#dsq-num-posts').html());
+  						clearInterval(commentCount);
+  					}
+  				}, 1000);
+  			})();
+  		}
+  	</script>
+  	
   </body>
 </html>

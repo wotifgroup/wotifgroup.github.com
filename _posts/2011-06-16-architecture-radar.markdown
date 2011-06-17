@@ -1,6 +1,10 @@
 ---
 layout: post
 title: WotifGroup Architecture Radar - Apr 2011 
+category: Architecture
+tags:
+  - architecture
+  - radar
 ---
 
 The WotifGroup Architecture Radar is "our" version of the <a href="http://www.thoughtworks.com/radar">ThoughtWorks Technology Radar</a>.
