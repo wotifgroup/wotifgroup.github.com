@@ -2,6 +2,11 @@
 layout: default
 body: blog archive
 ---
+<div id="sidebar">
+	{% include intro.markdown %}
+	{% include sidebar_tabs.markdown %}
+	{% include tags.markdown %}
+</div><!-- end: #sidebar-->
 <div id="content">
 	<div id="blog-top">
 		<div id="change-view">Change view: <a id="list-view" href="#">List</a><a id="grid-view" href="#">Grid</a></div>
@@ -23,8 +28,3 @@ body: blog archive
 	</div>
 </div>
 <!-- begin: #sidebar -->
-<div id="sidebar">
-	{% include intro.markdown %}
-	{% include sidebar_tabs.markdown %}
-	{% include tags.markdown %}
-</div><!-- end: #sidebar-->
