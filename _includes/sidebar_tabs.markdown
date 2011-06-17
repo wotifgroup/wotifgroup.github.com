@@ -18,9 +18,3 @@
 		</ul>
 	</div>
 </div>
-<script type="text/javascript">  
-google.load("jqueryui", "1");
-google.setOnLoadCallback(function() {  
-    $("#side-tabs").tabs();
-});  
-</script>

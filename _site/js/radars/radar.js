@@ -1,4 +1,4 @@
-function init(h,w) {
+function radar_init(h,w) {
 
  document.getElementById('title').text = radar_title;
 

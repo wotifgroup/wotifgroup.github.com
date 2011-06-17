@@ -4,11 +4,21 @@
   <head>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
     <title>Tag: architecture</title>
-    <link rel="stylesheet" type="text/css" href="/css/stylesheet.css" charset="utf-8">
-    <script type="text/javascript" src="https://www.google.com/jsapi">
-    </script>
+    <link rel="stylesheet" type="text/css" href="/css/stylesheet.css" charset="utf-8"/>
+    <link rel="stylesheet" type="text/css" href="http://jquery-ui.googlecode.com/svn/tags/latest/themes/base/jquery.ui.all.css"/>
+    
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js">
     </script>    
+    <script type="text/javascript" src="http://jquery-ui.googlecode.com/svn/tags/latest/ui/jquery-ui.js"></script>
+    
+    <script type="text/javascript" src="http://jquery-ui.googlecode.com/svn/tags/latest/ui/jquery.ui.tabs.js"></script>
+        
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $("#side-tabs").tabs()
+    })  
+    </script>
+    
   </head>
   <body id="intro">
     <div id="wrapper">
@@ -41,22 +51,22 @@
 			</div>
 			<p>The WotifGroup Architecture Radar is "our" version of the <a href="http://www.thoughtworks.com/radar">ThoughtWorks Technology Radar</a>.</p>
 
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js">
-</script><script type="text/javascript" src="/js/radars/lib/protovis-3.2/protovis-d3.2.js">
-</script><script type="text/javascript" charset="utf-8" src="/js/radars/utils.js">
-</script><script type="text/javascript" charset="utf-8" src="/js/radars/radars/wotifgroup_tech_radar_feb_2011.js">
-</script><script type="text/javascript" src="/js/radars/radar.js" charset="utf-8">
-</script><script type="text/javascript" charset="utf-8">
+<script type="text/javascript" src="/js/radars/lib/protovis-3.2/protovis-d3.2.js"></script><script type="text/javascript" charset="utf-8" src="/js/radars/utils.js"></script><script type="text/javascript" charset="utf-8" src="/js/radars/radars/wotifgroup_tech_radar_feb_2011.js"></script><script type="text/javascript" src="/js/radars/radar.js" charset="utf-8"></script><h1 id="title" style="text-align: center;">WotifGroup Architecture Radar (Apr 2011)</h1>
+
+
+<p></p>
+
+<div id="radar"></div>
+
+
+<p></p>
+
+<script type="text/javascript">
  
 var h = 1160;
 var w = 1200;
  
-$(function() {init(h,w);});
-
-</script><h1 id="title" style="text-align: center;">WotifGroup Architecture Radar (Apr 2011)</h1>
-
-
- <a class="more-link" href="/2011/06/16/architecture-radar">Read More&hellip;</a>
+$(document).ready(function(</script> <a class="more-link" href="/2011/06/16/architecture-radar">Read More&hellip;</a>
 		</div><!-- end: .post -->
 		
 	</div>
@@ -74,7 +84,7 @@ $(function() {init(h,w);});
 	<div id="ui-tabs-1" class="tab-content">
 		<ul>
 			
-				<li><a href="/2011/06/17/test" title="WotifGroup Architecture Radar - Apr 2011">WotifGroup Architecture Radar - Apr 2011</a></li>
+				<li><a href="/2011/06/17/test" title="Another test">Another test</a></li>
 			
 				<li><a href="/2011/06/16/architecture-radar" title="WotifGroup Architecture Radar - Apr 2011">WotifGroup Architecture Radar - Apr 2011</a></li>
 			
@@ -90,12 +100,7 @@ $(function() {init(h,w);});
 		</ul>
 	</div>
 </div>
-<script type="text/javascript">  
-google.load("jqueryui", "1");
-google.setOnLoadCallback(function() {  
-    $("#side-tabs").tabs();
-});  
-</script>
+
 	<div id="popular-tags" class="section">	
 		<h2 class="section-title">Related Tags</h2>
 		<ul>
@@ -115,7 +120,7 @@ google.setOnLoadCallback(function() {
   		if ($('#disqus_thread').length) {
   			var disqus_shortname = 'wotifgroupblog'; // required: replace example with your forum shortname
   			var disqus_identifier = 'tags/architecture/index.html';
-  			var disqus_url = 'http://josediazgonzalez.comtags/architecture/index.html';
+  			var disqus_url = 'http://wotifgroup.github.comtags/architecture/index.html';
   			var disqus_title = 'Tag: architecture';
 
   			(function() {

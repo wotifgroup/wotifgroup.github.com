@@ -9,7 +9,6 @@ body: blog single-post
 	</script>
 </div><!-- end: #sidebar -->
 <div id="content">
-     {{ content }}
    	<div class="post">
    		<div class="post-meta">
    			<span class="date"><img src="/images/icons/ico_calendar.png" alt="" />{{ page.date | date_to_string }} | </span>
@@ -21,10 +20,6 @@ body: blog single-post
    		<h1 class="post-title"><a href="#">{{ page.title }}</a></h1>
    		{{ content }}
    	</div>
-   	<div class="nextprev clearfix">
-   		<a class="prev" href="{{ page.previous.url }}"><span>{{ page.previous.title }}</span><br/>&larr; Previous Entry</a>
-   		<a class="next" href="{{ page.next.url }}"><span>{{ page.next.title }}</span><br/>Next Entry &rarr;</a>
-   	</div>
    	<div class="related-posts section">
    		<h3 class="uppercase-title">Related Posts</h3>
    		<ol>
@@ -33,12 +28,15 @@ body: blog single-post
    			{% endfor %}
    		</ol>
    	</div><!-- end: related-posts -->
+  	<div class="nextprev clearfix">
+  		<a class="prev" href="{{ page.previous.url }}"><span>{{ page.previous.title }}</span><br/>&larr; Previous Entry</a>
+  		<a class="next" href="{{ page.next.url }}"><span>{{ page.next.title }}</span><br/>Next Entry &rarr;</a>
+  	</div>
    	<div id="comments" class="section">
    		<div id="num-responses"><img src="/images/icons/ico_comments.png" alt=""><span class="responses-number">0</span> Responses. <a href="#comments">Add Yours!</a></div>
    		<h3>Discussion</h3>
    		<div id="disqus_thread" name="#comments">
    		</div>
-   		<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-   		<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+  
    	</div>
 </div><!-- end: #content-->

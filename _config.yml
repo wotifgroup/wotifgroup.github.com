@@ -9,6 +9,6 @@ regeneration: true
 lsi: true
 exclude: README.textile Rakefile
 tag_title_prefix: 'Tag: '
-base_url: http://josediazgonzalez.com
+base_url: http://wotifgroup.github.com
 post_types:
   - portfolio

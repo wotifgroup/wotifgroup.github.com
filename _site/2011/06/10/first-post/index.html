@@ -4,11 +4,21 @@
   <head>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
     <title>Welcome to 'WotifGroup Developers Blog'</title>
-    <link rel="stylesheet" type="text/css" href="/css/stylesheet.css" charset="utf-8">
-    <script type="text/javascript" src="https://www.google.com/jsapi">
-    </script>
+    <link rel="stylesheet" type="text/css" href="/css/stylesheet.css" charset="utf-8"/>
+    <link rel="stylesheet" type="text/css" href="http://jquery-ui.googlecode.com/svn/tags/latest/themes/base/jquery.ui.all.css"/>
+    
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js">
     </script>    
+    <script type="text/javascript" src="http://jquery-ui.googlecode.com/svn/tags/latest/ui/jquery-ui.js"></script>
+    
+    <script type="text/javascript" src="http://jquery-ui.googlecode.com/svn/tags/latest/ui/jquery.ui.tabs.js"></script>
+        
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $("#side-tabs").tabs()
+    })  
+    </script>
+    
   </head>
   <body id="intro">
     <div id="wrapper">
@@ -36,7 +46,7 @@
 	<div id="ui-tabs-1" class="tab-content">
 		<ul>
 			
-				<li><a href="/2011/06/17/test" title="WotifGroup Architecture Radar - Apr 2011">WotifGroup Architecture Radar - Apr 2011</a></li>
+				<li><a href="/2011/06/17/test" title="Another test">Another test</a></li>
 			
 				<li><a href="/2011/06/16/architecture-radar" title="WotifGroup Architecture Radar - Apr 2011">WotifGroup Architecture Radar - Apr 2011</a></li>
 			
@@ -52,17 +62,11 @@
 		</ul>
 	</div>
 </div>
-<script type="text/javascript">  
-google.load("jqueryui", "1");
-google.setOnLoadCallback(function() {  
-    $("#side-tabs").tabs();
-});  
-</script>
-	<script type="text/javascript" src="http://disqus.com/forums/wotifgroupblog/combination_widget.js?num_items=5&color=orange&default_tab=recent"></script>
+
+	<script type="text/javascript" src="http://disqus.com/forums/wotifgroupblog/combination_widget.js?num_items=5&color=orange&default_tab=recent">
+	</script>
 </div><!-- end: #sidebar -->
 <div id="content">
-     <p>WotifGroup Developers Blog is going to be an awesome project.</p>
-
    	<div class="post">
    		<div class="post-meta">
    			<span class="date"><img src="/images/icons/ico_calendar.png" alt="" />10 Jun 2011 | </span>
@@ -75,27 +79,26 @@ google.setOnLoadCallback(function() {
    		<p>WotifGroup Developers Blog is going to be an awesome project.</p>
 
    	</div>
-   	<div class="nextprev clearfix">
-   		<a class="prev" href=""><span></span><br/>&larr; Previous Entry</a>
-   		<a class="next" href="/2011/06/16/architecture-radar"><span>WotifGroup Architecture Radar - Apr 2011</span><br/>Next Entry &rarr;</a>
-   	</div>
    	<div class="related-posts section">
    		<h3 class="uppercase-title">Related Posts</h3>
    		<ol>
    			
-   				<li><a href="/2011/06/17/test">WotifGroup Architecture Radar - Apr 2011</a></li>
-   			
    				<li><a href="/2011/06/16/architecture-radar">WotifGroup Architecture Radar - Apr 2011</a></li>
+   			
+   				<li><a href="/2011/06/17/test">Another test</a></li>
    			
    		</ol>
    	</div><!-- end: related-posts -->
+  	<div class="nextprev clearfix">
+  		<a class="prev" href=""><span></span><br/>&larr; Previous Entry</a>
+  		<a class="next" href="/2011/06/16/architecture-radar"><span>WotifGroup Architecture Radar - Apr 2011</span><br/>Next Entry &rarr;</a>
+  	</div>
    	<div id="comments" class="section">
    		<div id="num-responses"><img src="/images/icons/ico_comments.png" alt=""><span class="responses-number">0</span> Responses. <a href="#comments">Add Yours!</a></div>
    		<h3>Discussion</h3>
    		<div id="disqus_thread" name="#comments">
    		</div>
-   		<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-   		<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+  
    	</div>
 </div><!-- end: #content-->
 
@@ -107,7 +110,7 @@ google.setOnLoadCallback(function() {
   		if ($('#disqus_thread').length) {
   			var disqus_shortname = 'wotifgroupblog'; // required: replace example with your forum shortname
   			var disqus_identifier = '/2011/06/10/first-post';
-  			var disqus_url = 'http://josediazgonzalez.com/2011/06/10/first-post';
+  			var disqus_url = 'http://wotifgroup.github.com/2011/06/10/first-post';
   			var disqus_title = 'Welcome to 'WotifGroup Developers Blog'';
 
   			(function() {

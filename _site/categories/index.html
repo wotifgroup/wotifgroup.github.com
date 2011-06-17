@@ -4,11 +4,21 @@
   <head>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
     <title>Categories</title>
-    <link rel="stylesheet" type="text/css" href="/css/stylesheet.css" charset="utf-8">
-    <script type="text/javascript" src="https://www.google.com/jsapi">
-    </script>
+    <link rel="stylesheet" type="text/css" href="/css/stylesheet.css" charset="utf-8"/>
+    <link rel="stylesheet" type="text/css" href="http://jquery-ui.googlecode.com/svn/tags/latest/themes/base/jquery.ui.all.css"/>
+    
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js">
     </script>    
+    <script type="text/javascript" src="http://jquery-ui.googlecode.com/svn/tags/latest/ui/jquery-ui.js"></script>
+    
+    <script type="text/javascript" src="http://jquery-ui.googlecode.com/svn/tags/latest/ui/jquery.ui.tabs.js"></script>
+        
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $("#side-tabs").tabs()
+    })  
+    </script>
+    
   </head>
   <body id="intro">
     <div id="wrapper">
@@ -42,7 +52,7 @@
   		if ($('#disqus_thread').length) {
   			var disqus_shortname = 'wotifgroupblog'; // required: replace example with your forum shortname
   			var disqus_identifier = 'categories/index.html';
-  			var disqus_url = 'http://josediazgonzalez.comcategories/index.html';
+  			var disqus_url = 'http://wotifgroup.github.comcategories/index.html';
   			var disqus_title = 'Categories';
 
   			(function() {
