@@ -3,47 +3,67 @@
 <html>
   <head>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
-    <title>Wotif Group Developers Blog</title>
-    <link rel="stylesheet" type="text/css" href="/css/stylesheet.css" charset="utf-8"/>
-    <link rel="stylesheet" type="text/css" href="http://jquery-ui.googlecode.com/svn/tags/latest/themes/base/jquery.ui.all.css"/>
-    
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js">
-    </script>    
-    <script type="text/javascript" src="http://jquery-ui.googlecode.com/svn/tags/latest/ui/jquery-ui.js"></script>
-    
-    <script type="text/javascript" src="http://jquery-ui.googlecode.com/svn/tags/latest/ui/jquery.ui.tabs.js"></script>
-        
-    <script type="text/javascript">
-    $(document).ready(function() {
-        $("#side-tabs").tabs()
-    })  
-    </script>
-    
+    <link rel="stylesheet" type="text/css" href="/css/reset.css" charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="/css/style.css" charset="utf-8">
+    <link rel="stylesheet" href="/css/jquery-ui-1.8.13.custom.css"> 
+    <script type="text/javascript" src="/js/jquery-1.5.1.min.js"></script> 
+    <script type="text/javascript" src="/js/jquery-ui-1.8.13.custom.min.js"></script>
+    <title>WotifGroup Technical Blog</title>
+    <script type="text/javascript"> 
+               $(function(){
+
+                   // Tabs
+                   $('#tabs').tabs();
+
+                   // hover states on the static widgets
+                   $('#dialog_link, ul#icons li').hover(
+                       function() { $(this).addClass('ui-state-hover'); },
+                       function() { $(this).removeClass('ui-state-hover'); }
+                   );
+
+               });
+           </script>
   </head>
-  <body id="intro">
-    <div id="wrapper">
-      <div id="header" onclick="javascript:window.location='http://wotifgroup.github.com/'">
-        <h1>WotifGroup Developers Blog</h1>
+
+  <body>
+    <a name="top"></a>
+    <div class="container">
+      <div class="header">
+        <div class="logo"><h1>WotifGroup Developers Blog</h1></div>
       </div>
-      <div id="navigation">
+      <div class="nav">
 	<ul>
 		<li><a class="current home" href="/">Home</a></li>
+		<li><a class="/posts/" href="/">Posts</a></li>
 		<li><a href="/tags/">Tags</a></li>
 		<li><a href="/categories/">Categories</a></li>
 		<li><a href="http://info.wotif.com/about_us">About Us</a></li>
 	</ul>
 </div><!-- end: #nav -->
-      <div id="page_body">
-          <div id="sidebar">
-	<div id="side-intro" class="section">
-  Brought to you by all the teams keeping the site(s) running... devs, architects, sysadmins, business analysis, testers, front-end engineers, uxi team.
-</div>
-	<div id="side-tabs"> 
-	<ul class="tabnav clearfix">
-		<li class="active"><a href="#ui-tabs-1">Recent</a></li>
-		<li><a href="#ui-tabs-2">Categories</a></li>
-	</ul>
-	<div id="ui-tabs-1" class="tab-content">
+      <div class="main">
+          <!-- <div id="sidebar">
+  <div class="side-bar"> 
+	<div class="tags">
+		<h4>Tags</h4>
+		<ul>
+  			
+  				<li><a href="/tags/architecture">architecture</a></li>
+			
+  				<li><a href="/tags/radar">radar</a></li>
+			
+		</ul>
+	</div>
+	<div class="category">
+		<h4>Categories</h4>
+  		<ul>
+  			
+  				<li><a href="/categories/Architecture">Architecture</a></li>
+  			
+  		</ul>
+  	</div>
+
+	<div class="recent">
+		<h4>Recent</h4>
 		<ul>
 			
 				<li><a href="/2011/06/16/architecture-radar" title="WotifGroup Architecture Radar - Apr 2011">WotifGroup Architecture Radar - Apr 2011</a></li>
@@ -52,78 +72,69 @@
 			
 		</ul>
 	</div>
-	<div id="ui-tabs-2" class="tab-content">
-		<ul>
-			
-				<li><a href="/categories/Architecture">Architecture</a></li>
-			
-		</ul>
-	</div>
+
 </div>
 
-	<script type="text/javascript" src="http://disqus.com/forums/wotifgroupblog/combination_widget.js?num_items=5&color=orange&default_tab=recent"></script>
-</div><!-- end: #sidebar -->
-<div id="content">
-	
-<div id="featured-post" class="post">
-	<span class="small-title">Featured</span>
-	<h1 class="post-title"><a href="/2011/06/16/architecture-radar">WotifGroup Architecture Radar - Apr 2011</a></h1>
-	<div class="post-meta">
-		<span class="date"><img src="images/icons/ico_calendar.png" alt="" />16 Jun 2011 | </span>
-		<span class="categories">
-			<img src="images/icons/ico_drawer.png" alt="" />
-			Filed in: <a href="/tags/architecture">architecture, </a> <a href="/tags/radar">radar</a> 
-		</span>
-	</div>
-	<p>The WotifGroup Architecture Radar is "our" version of the <a href="http://www.thoughtworks.com/radar">ThoughtWorks Technology Radar</a>.</p>
+  <script type="text/javascript" src="http://disqus.com/forums/wotifgroupblog/combination_widget.js?num_items=5&color=orange&default_tab=recent"></script>
+</div> -->
+<div class="main-inner">
+  <div class="content">
+  	<p>This project <a href="http://github.com//website">WotifGroup Technical Blog</a> is awesome.</p>
 
-<script type="text/javascript" src="/js/radars/lib/protovis-3.2/protovis-d3.2.js"></script><script type="text/javascript" charset="utf-8" src="/js/radars/utils.js"></script><script type="text/javascript" charset="utf-8" src="/js/radars/radars/wotifgroup_tech_radar_feb_2011.js"></script><script type="text/javascript" src="/js/radars/radar.js" charset="utf-8"></script><h1 id="title" style="text-align: center;">WotifGroup Architecture Radar (Apr 2011)</h1>
+<p>To enable Disqus comments + badges for this site, <a href="http://disqus.com/add/">add it to your Disqus account</a>.</p>
 
-
-<p></p>
-
-<div id="radar"></div>
-
-
-<p></p>
-
-<script type="text/javascript">
- 
-var h = 1160;
-var w = 1200;
- 
-$(document).ready(function(</script> <a class="more-link" href="/2011/06/16/architecture-radar">Read More&hellip;</a>
+  </div><!-- end: #content-->
 </div>
-
-
-<div id="recent-posts" class="section">
-	<ul class="two-columns">
-		
-		<li class="post odd">
-			<span class="small-title"></span>
-			<h3 class="post-title"><a href="/2011/06/10/first-post">Welcome to 'WotifGroup Developers Blog'</a></h3>
-			<div class="post-meta">
-				<span class="date"><img src="images/icons/ico_calendar.png" alt="" />10 Jun 2011</span>
-			</div>
-			<p>WotifGroup Developers Blog is going to be an awesome project.</p>
- <a class="more-link" href="/2011/06/10/first-post">Read More&hellip;</a>
-		</li>
-		
-	</ul>
-</div>
-
-</div><!-- end: #content-->
-
-         <div id="footer">
-  </div>
     </div>
-    
+     <div class="footer">
+    <div class="footer-inner">
+           <div class="footer-about">
+               <h3>About Wotif</h3>
+               <p>Wotif Group operates leading online travel brands in the Asia Pacific region. We provide both business and leisure customers alike with a highly convenient booking service for all their travel needs. Our services are simple to use, value-focused, and provide a wide range of choice whether for accommodation, flights, car rental, insurance, travel packages or tours.</p>
+               <a href="">Learn more</a>
+           </div>
+           <div class="footer-brands">
+           <h3>Wotif Brands</h3>
+           <ul class="list-brands">
+               <li><a href="">Wotif.com</a></li>
+               <li><a href="">Lastminute.com.au</a></li>
+               <li><a href="">Travel.com.au</a></li>
+               <li><a href="">Travelmax</a></li>
+               <li><a href="">Asia Web Direct</a></li>
+               <li><a href="">LateStays.com</a></li>
+               <li><a href="">GoDo.com.au</a></li>
+               <li><a href="">Wotflight</a></li>
+               <li><a href="">Arnold Travel Technology</a></li>
+           </ul>
+           </div>
+           <div class="footer-social">
+               <h3>About this blog</h3>
+               <p>Brought to you by all the teams keeping the site(s) running... devs, architects, sysadmins, business analysis, testers, front-end engineers, uxi team.</p>                                                
+           </div>
+           <div class="footer-contact">               
+               <h3>Work @ Wotif!</h3>
+               <p>Interested in working with a fun bunch of people doing cool and interesting stuff?  We're always on the look out for talented individuals with cutting edge skills.</p>
+               <a href="">Current vacancies</a>
+           </div>
+    </div>  
+  </div>    
+   <div class="footer-bar">
+       <div class="footer-bar-inner">
+           <div class="copyright">
+               <p>Copyright &copy; 2011 Wotif.com Holdings Limited. ABN 41 093 000 456.</p>
+               <p><a href="">Home</a> | <a href="">Post</a> | <a href="">Categories</a> | <a href="">Author</a> | <a href="">About</a></p>
+           </div>
+           <div class="top">^ <a href="#top">Top</a></div>
+       </div>
+   </div>
+
+       
     <script type="text/javascript">
   		if ($('#disqus_thread').length) {
   			var disqus_shortname = 'wotifgroupblog'; // required: replace example with your forum shortname
   			var disqus_identifier = '/index.html';
   			var disqus_url = 'http://wotifgroup.github.com/index.html';
-  			var disqus_title = 'Wotif Group Developers Blog';
+  			var disqus_title = 'WotifGroup Technical Blog';
 
   			(function() {
   				var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;

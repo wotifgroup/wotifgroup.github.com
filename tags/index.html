@@ -3,42 +3,50 @@
 <html>
   <head>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" type="text/css" href="/css/reset.css" charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="/css/style.css" charset="utf-8">
+    <link rel="stylesheet" href="/css/jquery-ui-1.8.13.custom.css"> 
+    <script type="text/javascript" src="/js/jquery-1.5.1.min.js"></script> 
+    <script type="text/javascript" src="/js/jquery-ui-1.8.13.custom.min.js"></script>
     <title>Tags</title>
-    <link rel="stylesheet" type="text/css" href="/css/stylesheet.css" charset="utf-8"/>
-    <link rel="stylesheet" type="text/css" href="http://jquery-ui.googlecode.com/svn/tags/latest/themes/base/jquery.ui.all.css"/>
-    
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js">
-    </script>    
-    <script type="text/javascript" src="http://jquery-ui.googlecode.com/svn/tags/latest/ui/jquery-ui.js"></script>
-    
-    <script type="text/javascript" src="http://jquery-ui.googlecode.com/svn/tags/latest/ui/jquery.ui.tabs.js"></script>
-        
-    <script type="text/javascript">
-    $(document).ready(function() {
-        $("#side-tabs").tabs()
-    })  
-    </script>
-    
+    <script type="text/javascript"> 
+               $(function(){
+
+                   // Tabs
+                   $('#tabs').tabs();
+
+                   // hover states on the static widgets
+                   $('#dialog_link, ul#icons li').hover(
+                       function() { $(this).addClass('ui-state-hover'); },
+                       function() { $(this).removeClass('ui-state-hover'); }
+                   );
+
+               });
+           </script>
   </head>
-  <body id="intro">
-    <div id="wrapper">
-      <div id="header" onclick="javascript:window.location='http://wotifgroup.github.com/'">
-        <h1>WotifGroup Developers Blog</h1>
+
+  <body>
+    <a name="top"></a>
+    <div class="container">
+      <div class="header">
+        <div class="logo"><h1>WotifGroup Developers Blog</h1></div>
       </div>
-      <div id="navigation">
+      <div class="nav">
 	<ul>
 		<li><a class="current home" href="/">Home</a></li>
+		<li><a class="/posts/" href="/">Posts</a></li>
 		<li><a href="/tags/">Tags</a></li>
 		<li><a href="/categories/">Categories</a></li>
 		<li><a href="http://info.wotif.com/about_us">About Us</a></li>
 	</ul>
 </div><!-- end: #nav -->
-      <div id="page_body">
-          <div id="content">
-	<div class="post">
-		<h1 class="post-title">Tags</h1>
-		<p class="lead">These tags are for quick browsing, not for anything else</p>
-		
+      <div class="main">
+          <div class="main-inner">
+  <div class="content">
+  	<div class="post">
+  		<h1 class="post-title">Tags</h1>
+  		<p class="lead">Tag Index</p>
+  		
     <h4><a href="/tags/architecture" name="architecture">architecture</a></h4>
     <ul>
         
@@ -53,12 +61,53 @@
         
     </ul>
 
-	</div>
-</div><!-- end: #content-->
-         <div id="footer">
-  </div>
+  	</div>
+  </div><!-- end: #content-->
+</div>
     </div>
-    
+     <div class="footer">
+    <div class="footer-inner">
+           <div class="footer-about">
+               <h3>About Wotif</h3>
+               <p>Wotif Group operates leading online travel brands in the Asia Pacific region. We provide both business and leisure customers alike with a highly convenient booking service for all their travel needs. Our services are simple to use, value-focused, and provide a wide range of choice whether for accommodation, flights, car rental, insurance, travel packages or tours.</p>
+               <a href="">Learn more</a>
+           </div>
+           <div class="footer-brands">
+           <h3>Wotif Brands</h3>
+           <ul class="list-brands">
+               <li><a href="">Wotif.com</a></li>
+               <li><a href="">Lastminute.com.au</a></li>
+               <li><a href="">Travel.com.au</a></li>
+               <li><a href="">Travelmax</a></li>
+               <li><a href="">Asia Web Direct</a></li>
+               <li><a href="">LateStays.com</a></li>
+               <li><a href="">GoDo.com.au</a></li>
+               <li><a href="">Wotflight</a></li>
+               <li><a href="">Arnold Travel Technology</a></li>
+           </ul>
+           </div>
+           <div class="footer-social">
+               <h3>About this blog</h3>
+               <p>Brought to you by all the teams keeping the site(s) running... devs, architects, sysadmins, business analysis, testers, front-end engineers, uxi team.</p>                                                
+           </div>
+           <div class="footer-contact">               
+               <h3>Work @ Wotif!</h3>
+               <p>Interested in working with a fun bunch of people doing cool and interesting stuff?  We're always on the look out for talented individuals with cutting edge skills.</p>
+               <a href="">Current vacancies</a>
+           </div>
+    </div>  
+  </div>    
+   <div class="footer-bar">
+       <div class="footer-bar-inner">
+           <div class="copyright">
+               <p>Copyright &copy; 2011 Wotif.com Holdings Limited. ABN 41 093 000 456.</p>
+               <p><a href="">Home</a> | <a href="">Post</a> | <a href="">Categories</a> | <a href="">Author</a> | <a href="">About</a></p>
+           </div>
+           <div class="top">^ <a href="#top">Top</a></div>
+       </div>
+   </div>
+
+       
     <script type="text/javascript">
   		if ($('#disqus_thread').length) {
   			var disqus_shortname = 'wotifgroupblog'; // required: replace example with your forum shortname
