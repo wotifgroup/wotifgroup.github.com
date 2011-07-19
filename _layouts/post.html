@@ -2,13 +2,8 @@
 layout: default
 body: blog single-post
 ---
-<!-- <div id="sidebar">
-  {% include intro.markdown %}
-  {% include sidebar_tabs.markdown %}
-  <script type="text/javascript" src="http://disqus.com/forums/wotifgroupblog/combination_widget.js?num_items=5&color=orange&default_tab=recent">
-  </script>
-</div><!-- end: #sidebar --> -->
 <div class="main-inner">
+  {% include sidebar_tabs.markdown %}  
 <div class="content">
    	<div class="post">
    		<div class="post-meta">
@@ -36,7 +31,7 @@ body: blog single-post
    	<div id="comments" class="section">
    		<div id="num-responses"><img src="/images/icons/ico_comments.png" alt=""><span class="responses-number">0</span> Responses. <a href="#comments">Add Yours!</a></div>
    		<h3>Discussion</h3>
-   		<div id="disqus_thread" name="#comments">
+   		<div id="disqus_thread" name="#comments" class="comment">
    		</div>
   
    	</div>

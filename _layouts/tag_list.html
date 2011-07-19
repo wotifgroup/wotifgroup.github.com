@@ -1,9 +1,10 @@
 ---
-layout: full
+layout: default
 title: Tags
-lead: Tag Index
 ---
-
+<div class="main-inner" >
+  {% include sidebar_tabs.markdown %}
+<div class="content">
 {% for tag in page.tags %}
     <h4><a href="/tags/{{ tag | replace:' ', '-' | downcase }}" name="{{ tag | replace:' ','-' | downcase }}">{{ tag }}</a></h4>
     <ul>
@@ -12,3 +13,5 @@ lead: Tag Index
         {% endfor %}
     </ul>
 {% endfor %}
+</div>
+</div>

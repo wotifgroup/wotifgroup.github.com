@@ -2,7 +2,8 @@
 layout: default
 body: full-width page
 ---
-<div id="content">
+<div class="main-inner">
+<div class="content">
 	<div class="post">
 		<h1 class="post-title">{{ page.month | date_to_month }} {{ page.year }}</h1>
 		<p class="lead">Posts from {{ page.month | date_to_month }}, {{ page.year }}</p>
@@ -17,3 +18,4 @@ body: full-width page
 		</ul>
 	</div>
 </div><!-- end: #content-->
+</div>

@@ -4,7 +4,6 @@ body: blog archive
 ---
 <div class="main-inner">
   	{% include sidebar_tabs.markdown %}
-  	{% include tags.markdown %}
   <div class="content">
   	<div id="blog-posts">
   		{% for post in site.categories[page.category] %}

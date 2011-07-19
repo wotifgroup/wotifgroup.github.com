@@ -1,7 +1,12 @@
 ---
-layout: full
+layout: default
 title: Categories
 ---
+<div class="main-inner" >
+  {% include sidebar_tabs.markdown %}
+<div class="content">
 {% for category in page.categories %}
 	<li><a href="/categories/{{ category | replace:' ', '-' | downcase  }}">{{ category }}</a></li>
 {% endfor %}
+</div>
+</div>

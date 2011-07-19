@@ -2,12 +2,9 @@
 layout: default
 body: blog archive
 ---
-<!-- begin: #sidebar -->
 <div class="main-inner" >
+  {% include sidebar_tabs.markdown %}
 <div class="content">
-	<div id="blog-top">
-		<div id="change-view">Change view: <a id="list-view" href="#">List</a><a id="grid-view" href="#">Grid</a></div>
-	</div>
 	<div id="blog-posts">
 		{% for post in site.tags[page.tag] %}
 		<div class="post{% if forloop.first %} first{% endif %}">
