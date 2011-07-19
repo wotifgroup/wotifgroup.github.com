@@ -1,36 +1,15 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
-"http://www.w3.org/TR/html4/strict.dtd">
-<html>
-  <head>
-    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
-    <title>{{ page.title }}</title>
-    <link rel="stylesheet" type="text/css" href="/css/stylesheet.css" charset="utf-8"/>
-    <link rel="stylesheet" type="text/css" href="http://jquery-ui.googlecode.com/svn/tags/latest/themes/base/jquery.ui.all.css"/>
-    
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js">
-    </script>    
-    <script type="text/javascript" src="http://jquery-ui.googlecode.com/svn/tags/latest/ui/jquery-ui.js"></script>
-    
-    <script type="text/javascript" src="http://jquery-ui.googlecode.com/svn/tags/latest/ui/jquery.ui.tabs.js"></script>
-        
-    <script type="text/javascript">
-    $(document).ready(function() {
-        $("#side-tabs").tabs()
-    })  
-    </script>
-    
-  </head>
-  <body id="intro">
-    <div id="wrapper">
-      <div id="header" onclick="javascript:window.location='http://wotifgroup.github.com/'">
-        <h1>WotifGroup Developers Blog</h1>
+{% include header.html %}
+  <body>
+    <a name="top"></a>
+    <div class="container">
+      <div class="header">
+        <div class="logo"><h1>WotifGroup Developers Blog</h1></div>
       </div>
       {% include nav.markdown %}
-      <div id="page_body">
+      <div class="main">
           {{ content }}
-        {% include footer.html %}
     </div>
-    
+    {% include footer.html %}    
     <script type="text/javascript">
   		if ($('#disqus_thread').length) {
   			var disqus_shortname = 'wotifgroupblog'; // required: replace example with your forum shortname

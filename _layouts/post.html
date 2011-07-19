@@ -2,13 +2,14 @@
 layout: default
 body: blog single-post
 ---
-<div id="sidebar">
-	{% include intro.markdown %}
-	{% include sidebar_tabs.markdown %}
-	<script type="text/javascript" src="http://disqus.com/forums/wotifgroupblog/combination_widget.js?num_items=5&color=orange&default_tab=recent">
-	</script>
-</div><!-- end: #sidebar -->
-<div id="content">
+<!-- <div id="sidebar">
+  {% include intro.markdown %}
+  {% include sidebar_tabs.markdown %}
+  <script type="text/javascript" src="http://disqus.com/forums/wotifgroupblog/combination_widget.js?num_items=5&color=orange&default_tab=recent">
+  </script>
+</div><!-- end: #sidebar --> -->
+<div class="main-inner">
+<div class="content">
    	<div class="post">
    		<div class="post-meta">
    			<span class="date"><img src="/images/icons/ico_calendar.png" alt="" />{{ page.date | date_to_string }} | </span>
@@ -39,4 +40,5 @@ body: blog single-post
    		</div>
   
    	</div>
-</div><!-- end: #content-->
+  </div> <!-- end content -->
+</div><!-- end: main-inner-->

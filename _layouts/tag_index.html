@@ -3,19 +3,8 @@ layout: default
 body: blog archive
 ---
 <!-- begin: #sidebar -->
-<div id="sidebar">
-	{% include intro.markdown %}
-	{% include sidebar_tabs.markdown %}
-	<div id="popular-tags" class="section">	
-		<h2 class="section-title">Related Tags</h2>
-		<ul>
-			{% for tag in page.related %}
-				<li><a href="/tags/{{ tag | replace:' ', '-' | downcase }}">{{ tag }}</a></li>
-			{% endfor %}
-		</ul>
-	</div>
-</div><!-- end: #sidebar-->
-<div id="content">
+<div class="main-inner" >
+<div class="content">
 	<div id="blog-top">
 		<div id="change-view">Change view: <a id="list-view" href="#">List</a><a id="grid-view" href="#">Grid</a></div>
 	</div>
@@ -34,4 +23,5 @@ body: blog archive
 		</div><!-- end: .post -->
 		{% endfor %}
 	</div>
+</div>
 </div>
