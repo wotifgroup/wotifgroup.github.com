@@ -70,7 +70,7 @@
 			
 				<li><a href="/2011/06/16/architecture-radar" title="WotifGroup Architecture Radar - Apr 2011">WotifGroup Architecture Radar - Apr 2011</a></li>
 			
-				<li><a href="/2011/06/10/first-post" title="Welcome to 'WotifGroup Technical Blog'">Welcome to 'WotifGroup Technical Blog'</a></li>
+				<li><a href="/2011/06/10/first-post" title="Welcome to "WotifGroup Technical Blog"">Welcome to "WotifGroup Technical Blog"</a></li>
 			
 		</ul>
 	</div>
@@ -102,7 +102,7 @@
     </div><!-- end: .post -->
     
     <div class="post">
-        <h1 class="post-title"><a href="/2011/06/10/first-post">Welcome to 'WotifGroup Technical Blog'</a></h1>
+        <h1 class="post-title"><a href="/2011/06/10/first-post">Welcome to "WotifGroup Technical Blog"</a></h1>
         <div class="post-meta">
             <span class="date"><img src="/images/icons/ico_calendar.png" alt="" />10 Jun 2011 | </span>
             <span class="categories">
@@ -123,70 +123,28 @@
   </div><!-- end: #content-->
 </div>
     </div>
-     <div class="footer">
-    <div class="footer-inner">
-           <div class="footer-about">
-               <h3>About Wotif</h3>
-               <p>Wotif Group operates leading online travel brands in the Asia Pacific region. We provide both business and leisure customers alike with a highly convenient booking service for all their travel needs. Our services are simple to use, value-focused, and provide a wide range of choice whether for accommodation, flights, car rental, insurance, travel packages or tours.</p>
-               <a href="">Learn more</a>
-           </div>
-           <div class="footer-brands">
-           <h3>Wotif Brands</h3>
-           <ul class="list-brands">
-               <li><a href="">Wotif.com</a></li>
-               <li><a href="">Lastminute.com.au</a></li>
-               <li><a href="">Travel.com.au</a></li>
-               <li><a href="">Travelmax</a></li>
-               <li><a href="">Asia Web Direct</a></li>
-               <li><a href="">LateStays.com</a></li>
-               <li><a href="">GoDo.com.au</a></li>
-               <li><a href="">Wotflight</a></li>
-               <li><a href="">Arnold Travel Technology</a></li>
-           </ul>
-           </div>
-           <div class="footer-social">
-               <h3>About this blog</h3>
-               <p>Brought to you by all the teams keeping the site(s) running... devs, architects, sysadmins, business analysis, testers, front-end engineers, uxi team.</p>                                                
-           </div>
-           <div class="footer-contact">               
-               <h3>Work @ Wotif!</h3>
-               <p>Interested in working with a fun bunch of people doing cool and interesting stuff?  We're always on the look out for talented individuals with cutting edge skills.</p>
-               <a href="">Current vacancies</a>
-           </div>
-    </div>  
-  </div>    
-   <div class="footer-bar">
-       <div class="footer-bar-inner">
-           <div class="copyright">
-               <p>Copyright &copy; 2011 Wotif.com Holdings Limited. ABN 41 093 000 456.</p>
-               <p><a href="">Home</a> | <a href="">Post</a> | <a href="">Categories</a> | <a href="">Author</a> | <a href="">About</a></p>
-           </div>
-           <div class="top">^ <a href="#top">Top</a></div>
-       </div>
-   </div>
+    
+<script type="text/javascript">
+	if ($('#disqus_thread').length) {
+		var disqus_shortname = 'wotifgroupblog'; // required: replace example with your forum shortname
+		var disqus_identifier = '/index.html';
+		var disqus_url = 'http://wotifgroup.github.com/index.html';
+		var disqus_title = 'WotifGroup Technical Blog';
 
-       
-    <script type="text/javascript">
-  		if ($('#disqus_thread').length) {
-  			var disqus_shortname = 'wotifgroupblog'; // required: replace example with your forum shortname
-  			var disqus_identifier = '/index.html';
-  			var disqus_url = 'http://wotifgroup.github.com/index.html';
-  			var disqus_title = 'WotifGroup Technical Blog';
+		(function() {
+			var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+			dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+			(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
 
-  			(function() {
-  				var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-  				dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-  				(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+			var commentCount = setInterval(function() {
+				if ($('#dsq-num-posts').length) {
+					$('.responses-number').html($('#dsq-num-posts').html());
+					clearInterval(commentCount);
+				}
+			}, 1000);
+		})();
+	}
+</script>
 
-  				var commentCount = setInterval(function() {
-  					if ($('#dsq-num-posts').length) {
-  						$('.responses-number').html($('#dsq-num-posts').html());
-  						clearInterval(commentCount);
-  					}
-  				}, 1000);
-  			})();
-  		}
-  	</script>
-  	
   </body>
 </html>
