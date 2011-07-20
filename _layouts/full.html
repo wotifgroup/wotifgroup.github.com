@@ -9,6 +9,12 @@ body: full-width page
   		<p class="lead">{{ page.lead }}</p>
   		{{ content }}
   	</div>
+  	<div id="comments" class="section">
+   		<div id="num-responses"><img src="/images/icons/ico_comments.png" alt=""><span class="responses-number">0</span> Responses. <a href="#comments">Add Yours!</a></div>
+   		<h3>Discussion</h3>
+   		<div id="disqus_thread" name="#comments" class="comment">
+   		</div>
+   	</div> <!-- end comments -->   	
   </div>
 </div>
 {% include disqus.html %}
