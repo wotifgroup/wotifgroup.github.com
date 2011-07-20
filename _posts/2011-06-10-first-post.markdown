@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Welcome to 'WotifGroup Technical Blog'
+title: Welcome to "WotifGroup Technical Blog"
 tags:
  - team
 ---
